@@ -52,7 +52,7 @@ export default {
     border-top solid 1px rgb(211, 211, 211)
     font-size 12px
     .about_link
-      font-size 12px 
+      font-size 12px
     .split
       padding 0 10px
     .el-row
@@ -79,6 +79,4 @@ export default {
         background-position 60px 0
       .logo-cash
         background url('../../static/img/cash.png') no-repeat
-
-        
 </style>
