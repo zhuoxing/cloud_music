@@ -4,10 +4,11 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   base: '/music/',
   routes: [
     {
-      path: '',
+      path: '/',
       redirect: '/MusicIndex'
     },
     // 仿网易云音乐首页

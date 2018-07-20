@@ -48,7 +48,7 @@ export default {
 <style lang="stylus">
   #sub-nav
     height 34px
-    line-height 34px
+    line-height 30px
     background rgb(194, 12, 12)
     .nav-list
       margin 0

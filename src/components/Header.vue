@@ -4,13 +4,13 @@
       <el-col :span="3" style="text-indent:-99999px">aaa</el-col>
       <el-col :span="3"><h4></h4></el-col>
       <el-col :span="9">
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+        <el-menu default-active="1" class="el-menu-demo" mode="horizontal" @select="handleSelect">
           <el-menu-item index="1">发现音乐</el-menu-item>
-          <el-menu-item index="3">我的音乐</el-menu-item>
-          <el-menu-item index="4">朋友</el-menu-item>
+          <el-menu-item index="2">我的音乐</el-menu-item>
+          <el-menu-item index="3">朋友</el-menu-item>
           <el-menu-item index="4">商城</el-menu-item>
-          <el-menu-item index="4">音乐人</el-menu-item>
-          <el-menu-item index="4">下载客户端</el-menu-item>
+          <el-menu-item index="5">音乐人</el-menu-item>
+          <el-menu-item index="6">下载客户端</el-menu-item>
         </el-menu>
       </el-col>
       <el-col :span='6'>
@@ -63,6 +63,23 @@ export default {
         height 70px
         line-height 70px
         color #fff
+        &:hover
+        &:focus
+          background #000
+          color #fff
+      .is-active
+        border-bottom 0
+        &:before
+          position absolute
+          bottom 0
+          left 50%
+          margin-left -6px
+          content ''
+          width 0
+          height 0
+          border-width 0 8px 8px
+          border-style solid
+          border-color transparent transparent #C20C0C
     .el-row
       height 70px
     .el-col
