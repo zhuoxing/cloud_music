@@ -59,7 +59,7 @@ export default {
         padding 0 20px
       .nav-link
         color #fff
-        padding 5px 10px
+        padding 5px 16px
         font-size 12px
         border-radius 20px
         line-height 34px

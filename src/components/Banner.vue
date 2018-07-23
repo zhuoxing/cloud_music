@@ -34,8 +34,8 @@ import 'swiper/dist/css/swiper.min.css'
 export default {
   data () {
     return{
-        backgroundUrl:['http://p1.music.126.net/jRidkDrKuEHJ-1eJ5EpPUg==/109951163411048187.jpg','http://p1.music.126.net/8Ms-rIuJjtoeyJ0nHfPp7A==/109951163410829980.jpg','http://p1.music.126.net/KcRoXZ5QOI5TigASxiGnLw==/109951163411042866.jpg'],
-        activeIndex: 0
+      backgroundUrl:['http://p1.music.126.net/jRidkDrKuEHJ-1eJ5EpPUg==/109951163411048187.jpg', 'http://p1.music.126.net/8Ms-rIuJjtoeyJ0nHfPp7A==/109951163410829980.jpg', 'http://p1.music.126.net/KcRoXZ5QOI5TigASxiGnLw==/109951163411042866.jpg'],
+      activeIndex: 0
     }
   },
   mounted () {
