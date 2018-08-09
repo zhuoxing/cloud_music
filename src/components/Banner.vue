@@ -30,26 +30,31 @@
 </template>
 <script>
 import Swiper from 'swiper'
-import 'swiper/dist/css/swiper.min.css'
 export default {
   data () {
-    return{
-      backgroundUrl:['http://p1.music.126.net/jRidkDrKuEHJ-1eJ5EpPUg==/109951163411048187.jpg', 'http://p1.music.126.net/8Ms-rIuJjtoeyJ0nHfPp7A==/109951163410829980.jpg', 'http://p1.music.126.net/KcRoXZ5QOI5TigASxiGnLw==/109951163411042866.jpg'],
-      activeIndex: 0
+    return {
+      backgroundUrl: ['http://p1.music.126.net/jRidkDrKuEHJ-1eJ5EpPUg==/109951163411048187.jpg', 'http://p1.music.126.net/8Ms-rIuJjtoeyJ0nHfPp7A==/109951163410829980.jpg', 'http://p1.music.126.net/KcRoXZ5QOI5TigASxiGnLw==/109951163411042866.jpg'],
+      activeIndex: 0,
+      swiperObj: ''
     }
   },
   mounted () {
     var _self = this
-    var mySwiper = new Swiper('.swiper-container', {
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      spaceBetween: 30,
+    _self.swiperObj = new Swiper('.swiper-container', {
       effect: 'fade',
-      loop:true,
-      onSlideChangeStart: function(swiper){
-        _self.activeIndex = swiper.realIndex
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      on: {
+        slideChangeTransitionStart: function () {
+          _self.activeIndex = this.realIndex
+        }
       }
     })
   }
@@ -73,6 +78,7 @@ export default {
       .tip-text
         color #fff
         font-size 12px
+        line-height 36px
       .download-link
         display block
         height 268px

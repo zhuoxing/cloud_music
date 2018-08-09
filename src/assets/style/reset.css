@@ -5,3 +5,12 @@
 ul li {
     list-style: none !important;
 }
+
+.clear{
+    clear: both;
+}
+.el-card{
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+}

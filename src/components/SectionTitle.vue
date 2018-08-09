@@ -3,14 +3,12 @@
     <a class="title"><span class="circle"></span>热门推荐</a>
     <router-link to='' class="more">更多</router-link>
     <div style="clear:both"></div>
-  </div>   
+  </div>
 </template>
 <script>
 export default {
   data () {
-    return{
-
-    }
+    return {}
   }
 }
 </script>

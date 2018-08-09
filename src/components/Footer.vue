@@ -47,6 +47,7 @@ export default {
 </script>
 <style lang="stylus">
   .el-footer
+    padding 20px
     height 148px !important
     background rgb(242, 242, 242)
     border-top solid 1px rgb(211, 211, 211)
